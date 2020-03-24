@@ -1,38 +1,287 @@
-.App {
+*
+{
+  padding:0;
+  margin:0,
+}
+
+
+.hovererr:hover{
+  cursor:pointer,
+}
+
+/* .warnanav{
+  color: white
+} */
+
+.warnanav:hover{
+  color: white !important
+}
+
+.navbar{
+  box-shadow: none !important
+}
+
+thead tr th{
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+td{
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* .warnatext{
+  color: black !important
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.kotakhitam{
+  background-color: rgba(0,0,0,0);
+  width: 100%;
+  height: 202px;
+  position: absolute;
+  top:0;
+  z-index: 10;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+
+.kotakhitam:hover{
+  background-color: rgba(0, 0, 0, 0.479)  
+}
+
+.tombolbuynow{
+  display: none;
+}
+
+.kotakhitam:hover .tombolbuynow{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 2px solid white;
   color: white;
+  font-size: 25px;
+  width: 50%;
+  background-color: transparent;
+  transition: 700ms;
 }
 
-.App-link {
-  color: #61dafb;
+.kotakhitam:hover .tombolbuynow:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.kotakhitam:hover .tomboldalam{
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.kotakhitam:hover .tombolbuynow:hover .tomboldalam{
+  color: black;
+}
+
+.paddingatas{
+  padding-top: 7%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.product-detail{
+  border: 1px solid #f8f9fa
+}
+
+.border-headerdetail{
+  border-bottom: gray solid 0.5px;
+}
+
+.font-nameprod{
+  font-size: 30px;
+}
+
+.font-typographysmall{
+  font-size: 14px
+}
+
+.font-typographymed{
+  font-size: 19px;
+}
+
+.font-harga{
+  font-size: 22px;
+  color: orangered;
+}
+
+.register:hover{
+  color: darkblue;
+  font-weight: bold;
+  transition: 0.5s ease-in;
+  ;
+}
+
+/* h1 { 
+  color:green; 
+}  */
+/* .xyz { 
+  background-size: auto; 
+  text-align: center; 
+  padding-top: 100px; 
+} 
+.btn-circle.btn-sm { 
+  width: 30px; 
+  height: 30px; 
+  padding: 6px 0px; 
+  border-radius: 15px; 
+  font-size: 8px; 
+  text-align: center; 
+} 
+.btn-circle.btn-md { 
+  width: 50px; 
+  height: 50px; 
+  padding: 7px 10px; 
+  border-radius: 25px; 
+  font-size: 10px; 
+  text-align: center; 
+} 
+.btn-circle.btn-xl { 
+  width: 70px; 
+  height: 70px; 
+  padding: 10px 16px; 
+  border-radius: 35px; 
+  font-size: 12px; 
+  text-align: center; 
+}  */
+
+.circle {
+  background: rgb(255, 145, 0);
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 40px;
+  z-index: 1;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* .number-input input[type="number"] {
+  -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+          appearance: textfield;
+}
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.number-input {
+  margin-bottom: 3rem;
+}
+.number-input button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.number-input input[type=number] {
+  text-align: center;
+}
+.number-input.number-input {
+  border: 1px solid #ced4da;
+  width: 10rem;
+  border-radius: .25rem;
+}
+.number-input.number-input button {
+  width: 2.6rem;
+  height: .7rem;
+}
+.number-input.number-input button.minus {
+  padding-left: 10px;
+}
+.number-input.number-input button:before,
+.number-input.number-input button:after {
+  width: .7rem;
+  background-color: #495057;
+}
+.number-input.number-input input[type=number] {
+  max-width: 4rem;
+  padding: .5rem;
+  border: 1px solid #ced4da;
+  border-width: 0 1px;
+  font-size: 1rem;
+  height: 2rem;
+  color: #495057;
+} */
+
+.footer-1{
+  background-color: silver;
+}
+
+h6{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 19.2499px
+}
+.col-md-3 ul{
+  padding: 50px;
+  margin: 8px;
+  color: darkblue;
+  font-weight: bolder;
+  font-size: 13px;
+  line-height: 22.75px
+}
+
+li{
+  list-style-type: none;
+}
+
+.icon{
+  height: 40px;
+  margin-top: -50px;  
+  width: 135px;
+  margin-left: 50px;
+  /* margin-right: -160px; */
+
+}
+.icon1{
+  height: 40px;
+  margin-top: -50px;  
+  width: 135px;
+  margin-left: -190px;
+  /* margin-right: -160px; */
+
+}
+
+.copyright{
+  width: 300px;
+  font-size: 11.05px;
+  line-height: 19.3375px;
+  color: darkblue;
+  font-weight: bold;
+  margin-left: -420px;
+  margin-top: -25px;
+}
+
+li,.icon,.icon1,p:hover{
+  cursor: pointer;    
+  /* transform: scale(1.03); */
 }
